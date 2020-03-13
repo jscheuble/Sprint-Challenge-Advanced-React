@@ -30,11 +30,14 @@ class App extends React.Component {
       <div className="App">
         <h1>sprint</h1>
         <Button />
-        {this.state.data.map((e) => {
-          return (
-            <Card key={e.id} name={e.name} country={e.country} searches={e.searches}/>
-          )
-        })}
+        <div className='card-container'>
+          {this.state.data.map((e) => {
+            return (
+              <Card key={e.id} name={e.name} country={e.country} searches={e.searches}/>
+            )
+          })}
+        </div>
+        
       </div>
     );
   }

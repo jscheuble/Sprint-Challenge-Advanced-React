@@ -4,5 +4,21 @@
 
 .dark-mode {
   color: white;
-  background: black;
+  background: #44057a;
+}
+
+.dark-mode .card {
+  border: 1px solid white;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 3%;
+}
+
+.card {
+  border: 1px solid black;
+  width: 25%;
 }
