@@ -16,4 +16,15 @@ test('when clicked, dark-mode class is added to body', () => {
 
     const body = document.querySelector('body');
     expect(body.classList.length === 1);
+});
+
+test('when clicked twice, dark-mode class is removed from body', () => {
+    const { getByText } = render(<Button />);
+    const button = getByText(/change theme/i);
+
+    fireEvent.click(button);
+    fireEvent.click(button);
+
+    const body = document.querySelector('body');
+    expect(body.classList.length === 0);
 })
