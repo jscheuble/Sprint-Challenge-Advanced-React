@@ -12,4 +12,4 @@ test('renders player data', async () => {
     await expect(name).toBeDefined();
     await expect(country).toBeDefined();
     await expect(searches).toBeDefined();
-})
+});
