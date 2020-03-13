@@ -2,6 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import './App.css';
 
+import Button from './components/DarkModeButton';
 import Card from './components/Card';
 
 class App extends React.Component {
@@ -28,9 +29,10 @@ class App extends React.Component {
     return (
       <div className="App">
         <h1>sprint</h1>
+        <Button />
         {this.state.data.map((e) => {
           return (
-            <Card key={e.id} name={e.name} country={e.country} seraches={e.searches}/>
+            <Card key={e.id} name={e.name} country={e.country} searches={e.searches}/>
           )
         })}
       </div>

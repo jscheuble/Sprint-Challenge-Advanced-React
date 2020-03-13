@@ -2,3 +2,7 @@
   text-align: center;
 }
 
+.dark-mode {
+  color: white;
+  background: black;
+}
