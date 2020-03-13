@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+body {
+  background: #e3c2ff;
+}
+
 .dark-mode {
   color: white;
   background: #44057a;
@@ -9,6 +13,17 @@
 
 .dark-mode .card {
   border: 1px solid white;
+}
+
+button {
+  padding: 0.5%;
+  border: 1px solid black;
+  background: #e3c2ff;
+}
+
+button:hover {
+  color: white;
+  background: #44057a;
 }
 
 .card-container {
